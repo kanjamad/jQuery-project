@@ -59,6 +59,35 @@ body{
 .section-title__info{
     color: var(--grey);
 }
+/* reverse title */
+.reverse-section-title__container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem 1.5rem;
+}
+
+.reverse-section-title__icon {
+    font-size: 4rem;
+    color: var(--yellow);
+    margin-left: 1rem;
+}
+
+.reverse-section-title__text {
+    line-height: 1.5;
+    border-right: 0.3rem solid var(--grey);
+    padding-right: 1rem;
+}
+
+.reverse-section-title__name {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.reverse-section-title__info {
+    color: var(--grey);
+}
+/* End of reverse title */
 /* End of global */
 
 
@@ -384,4 +413,101 @@ body{
 .contact__submit:hover{
     background: var(--yellow);
     color: var(--black);
+    font-size: 1.5rem;
+    color: red;
 }
+
+/* projects */
+.project{
+    position: relative;
+    background: linear-gradient(var(--yellow), var(--yellow));
+}
+.project__img{
+    display: block;
+    width: 100%;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+.project:hover .project__img{
+    opacity: 0.5;
+}
+.project__icon{
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+}
+.project:hover .project__icon{
+    transform: scale(1) translate(-50%, -50%);
+    -webkit-transform: scale(1) translate(-50%, -50%);
+    -moz-transform: scale(1) translate(-50%, -50%);
+    -ms-transform: scale(1) translate(-50%, -50%);
+    -o-transform: scale(1) translate(-50%, -50%);
+}
+.project__icon:hover{
+    color: var(--blue);
+}
+.project__outline{
+    position: absolute;
+    /* parent container: relative, actully item: absolute => show */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    outline: 0.5rem solid var(--black);
+    outline-offset: -2rem;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+.project:hover .project__outline{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+@media screen and (min-width:768px) {
+
+    .project {
+        flex: 0 0 50%;
+        /* flex:0 0 calc(50% - 0.5rem); */
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    .project {
+        flex: 0 0 25%;
+        /* flex: 0 0 calc(100% / 4); */
+        }   
+}
+
+/* 
+- min-width:768px because we know where the grid is going to start
+- Starting from 768px is going to be 2 col layout
+- Start from 992px big screen is going to have 4 img or 4 col layout */
