@@ -15,6 +15,26 @@ $(document).ready(function () {
             $('.video__switch-btn').addClass('btnSlide')
             $('#video').get(0).pause()
         }
-    })
+    });
+    // accordion
+    // accordion
+    $('.accordion__btn').click(function () {
+        console.log(this);
+        
+        $('.accordion__btn').not(this).removeClass('rotate');
+        $('.accordion__btn').not(this).parent().next().slideUp();
 
-})
+        
+        $(this).toggleClass('rotate')
+        $(this).parent().next().slideToggle();
+        
+    });
+
+
+
+
+
+
+
+
+});
