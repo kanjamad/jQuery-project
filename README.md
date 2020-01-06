@@ -13,4 +13,4 @@
 7.  Downloading jQuery https://jquery.com/download/
 8.  Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device (for jQuery or Zepto.js). https://dimsemenov.com/plugins/magnific-popup/
 
-![view](assets/load.gif "view")
+![screen-shot](screenShot.gif "screen-shot")
