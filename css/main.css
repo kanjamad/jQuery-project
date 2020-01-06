@@ -517,6 +517,7 @@ body{
 .progress__img{
     min-height: 50vh;
     background: url('../img/contact.jpeg')center/cover fixed no-repeat;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
 }
 .progress__bar{
     padding: 0 2rem;
@@ -582,7 +583,7 @@ body{
     align-self: center;
 }
 @media screen and (min-width:992px){
-    .progress__img{
-        clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100% );
+    .progress__img {
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
     }
 }
