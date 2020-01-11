@@ -717,3 +717,44 @@ body{
         flex: 0 0 calc(60% - 0.5rem);
     }
 }
+
+/* Number */
+.number{
+    text-align: center;
+    background: var(--black);
+    color: var(--yellow);
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.number:hover{
+    background: var(--blue);
+    color: var(--cream);
+}
+.number__icon{
+    font-size: 4rem;
+}
+.number__data{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.number__name{
+    text-transform: uppercase;
+}
+@media screen and (min-width: 768px){
+    .numbers{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .number{
+        flex: 0 0 50%;
+    }
+}
+@media screen and (min-width:992px){
+    .number{
+        flex: 0 25%;
+    }
+}

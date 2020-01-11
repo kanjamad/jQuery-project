@@ -12,5 +12,8 @@
 6.  Making the web more beautiful, fast, and open through great typography. https://fonts.google.com 
 7.  Downloading jQuery https://jquery.com/download/
 8.  Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device (for jQuery or Zepto.js). https://dimsemenov.com/plugins/magnific-popup/
+9. NumScroller
+jQuery plugin for number increment rolling animation when it becomes visibile while scrolling http://demo.tinywall.net/numscroller/
+  
 
 ![screen-shot](screenShot.gif "screen-shot")
