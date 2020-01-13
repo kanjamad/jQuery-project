@@ -94,6 +94,9 @@ body{
 .section-title__info--blue{
     color: var(--blue);
 }
+.section-title__name--yellow{
+    color: var(--yellow);
+}
 .item-margin{
     margin: 2rem 0;
 }
