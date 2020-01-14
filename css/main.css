@@ -875,3 +875,99 @@ body{
         height: 80%;
     }
 }
+
+/* ############# prices ############## */
+.prices{
+    background: var(--black);
+}
+.pricing-card{
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+.pricing-card__list{
+    list-style-type: none;
+}
+.pricing-card__item{
+    display: flex;
+    justify-content: center;
+    margin: 1.2rem 0;
+    font-size: 2rem;
+}
+.pricing-card__title{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+.pricing-card__value{
+    margin: 2rem 0;
+    font-size: 4rem;
+}
+.pricing-card__icon{
+    margin-right: 0.75rem;
+}
+.pricing-card__text{
+    text-transform: capitalize;
+}
+.pricing-card__link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    border: 0.10rem solid var(--white);
+    color: var(--white);
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.pricing-card__link:hover{
+    color: var(--black);
+    background: var(--blue);
+    border-color: var(--blue);
+}
+.pricing-card--custom{
+    background: var(--white);
+    color: var(--black);
+    border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -ms-border-radius: 2.5rem;
+    -o-border-radius: 2.5rem;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+}
+.pricing-card--custom:hover{
+    transform: translateY(-1.5rem);
+    -webkit-transform: translateY(-1.5rem);
+    -moz-transform: translateY(-1.5rem);
+    -ms-transform: translateY(-1.5rem);
+    -o-transform: translateY(-1.5rem);
+}
+.pricing-card--custom__link{
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+@media screen and (min-width:768px){
+    .pricing-card{
+        flex: 0 0 calc(50% - 0.8rem);
+        /* flex: 0 0 calc(100%/2); */
+    }
+}
+@media screen and (min-width:992px){
+    .pricing-card {
+        flex: 0 0 calc(33.3% - 0.8rem);
+        /* flex: 0 0 calc(100%/3); */
+    }
+}
