@@ -1043,3 +1043,73 @@ body{
         width: 70%;
     }
 }
+/* ########### Qoute ############### */
+.quotes {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/quotes-background.jpeg')center/cover no-repeat fixed
+}
+
+.quote__text {
+    color: var(--white);
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+.quote__icon {
+    color: var(--yellow);
+    font-size: 4rem;
+    margin: 0 1rem;
+}
+
+.quote__img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto;
+}
+
+.quote__img-1 {
+    background: url('../img/team-1.jpg')center/cover no-repeat;
+}
+.quote__img-2 {
+    background: url('../img/team-2.jpg')center/cover no-repeat;
+}
+.quote__img-3 {
+    background: url('../img/team-3.jpg')center/cover no-repeat;
+}
+.quote__name{
+    font-size: italic;
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+    color: var(--grey);
+}
+.quote__job{
+    text-transform: uppercase;
+    color: var(--yellow);
+}
+.owl-nav{
+    color: var(--yellow);
+    font-size: 1.5rem;
+}
+@media screen and (min-width:768px){
+    .quote{
+        display: flex;
+        justify-content: center;
+    }
+    .quote__text{
+        width: 60%;
+        align-self: center;
+        margin-left: 2rem;
+    }
+    .quote__icon{
+        align-self: flex-start;
+    }
+    .quote--reverse{
+        flex-direction: row-reverse;
+    }
+
+}

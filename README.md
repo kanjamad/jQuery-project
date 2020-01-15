@@ -14,6 +14,9 @@
 8.  Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device (for jQuery or Zepto.js). https://dimsemenov.com/plugins/magnific-popup/
 9. NumScroller
 jQuery plugin for number increment rolling animation when it becomes visibile while scrolling http://demo.tinywall.net/numscroller/
+10. Owl Carousel 2
+Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider. https://owlcarousel2.github.io/OwlCarousel2/
+
   
 
 ![screen-shot](screenShot.gif "screen-shot")
