@@ -19,4 +19,4 @@ Touch enabled jQuery plugin that lets you create a beautiful responsive carousel
 11. Find a place. Your location. Trails. Dedicated lanes. Bicycle-friendly roads. Dirt/unpaved trails. Live traffic. Fast. Slow. 2000 km. Set depart & arrive time. https://www.google.com/maps
   
 
-![screen-shot](screenShot.gif "screen-shot")
+![screen-shot](jQuery-project.gif "screen-shot")
